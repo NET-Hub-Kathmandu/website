@@ -6,7 +6,10 @@
 <title>.NET Hub Kathmandu | .NET Community in Nepal</title>
 <meta name="description" content=".NET Hub Kathmandu is a vibrant tech community for .NET, C#, Azure and ASP.NET developers in Nepal, run by senior technical leaders and Microsoft MVPs." />
 
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
+<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="assets/icons/favicon-16.png" type="image/png" sizes="16x16" />
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +17,6 @@
 </head>
 <body>
 
-<div class="cursor-glow" aria-hidden="true"></div>
 <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
 
 <!-- ============ NAVBAR ============ -->
@@ -22,16 +24,7 @@
   <div class="container nav-inner">
     <a href="#top" class="brand">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" width="34" height="34">
-          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#gradMark)"/>
-          <text x="24" y="30" text-anchor="middle" font-family="Sora, sans-serif" font-weight="800" font-size="17" fill="#fff">.NET</text>
-          <defs>
-            <linearGradient id="gradMark" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#5b87ab"/>
-              <stop offset="1" stop-color="#2f5670"/>
-            </linearGradient>
-          </defs>
-        </svg>
+        <img src="assets/icons/logo-mark.png" alt="" width="34" height="34" />
       </span>
       <span class="brand-text">.NET Hub<b>Kathmandu</b></span>
     </a>
@@ -56,119 +49,120 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <canvas id="networkCanvas" class="hero-canvas" aria-hidden="true"></canvas>
-  <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
-  <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
-
-  <div class="container hero-inner">
-    <p class="eyebrow reveal-up">
-      <span class="dot-pulse"></span>
-      Proud member of the .NET Foundation network &middot; 184+ groups worldwide
-    </p>
-
-    <h1 class="hero-title reveal-up" style="--d:0.05s">
-      Kathmandu's home for
-      <span class="hero-title-gradient">.NET, C# &amp; Cloud</span>
-      builders.
-    </h1>
-
-    <p class="hero-sub reveal-up" style="--d:0.15s">
-      A vibrant tech community dedicated to Microsoft's .NET stack — we bring developers
-      together to learn, share, and ship. Led by senior technical leadership and
-      Microsoft MVPs, we run hands‑on workshops, talks and conferences across Nepal.
-    </p>
-
-    <div class="hero-actions reveal-up" style="--d:0.25s">
-      <a href="https://www.meetup.com/dot-net-hub-kathmandu" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-        Join our next Meetup
-      </a>
-      <a href="#about" class="btn btn-ghost btn-lg">Learn more ↓</a>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal-up">.NET Hub Kathmandu</p>
+      <h1 class="hero-title reveal-up" style="--d:0.05s">Built by developers. Backed by Microsoft MVPs.</h1>
+      <p class="hero-sub reveal-up" style="--d:0.15s">
+        A .NET Foundation community group in Kathmandu — free, hands‑on workshops and talks
+        run by senior engineers, open to developers of every level.
+      </p>
+      <div class="hero-actions reveal-up" style="--d:0.25s">
+        <a href="https://www.meetup.com/dot-net-hub-kathmandu" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Join our next Meetup
+        </a>
+        <a href="#about" class="btn btn-ghost btn-lg">Learn more</a>
+      </div>
     </div>
 
-    <div class="hero-badges reveal-up" style="--d:0.35s">
-      <span class="badge-chip">🏛️ .NET Foundation Group</span>
-      <span class="badge-chip">🏅 Led by Microsoft MVPs</span>
-      <span class="badge-chip">📍 Kathmandu, Nepal</span>
+    <div class="hero-media reveal-up" style="--d:0.15s">
+      <div class="hero-photo">
+        <img src="assets/images/event-hero-speaker.jpg" alt="A speaker presenting at a .NET Hub Kathmandu event, Maitri office, Kathmandu" />
+      </div>
+      <span class="floating-chip chip-1">.NET Foundation</span>
+      <span class="floating-chip chip-2">Microsoft MVPs</span>
+      <span class="floating-chip chip-3">Kathmandu, Nepal</span>
     </div>
   </div>
-
-  <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <!-- ============ MARQUEE OF SUPPORTED TECH ============ -->
 <section class="marquee-section" aria-label="Technologies we work with">
   <div class="marquee">
-    <div class="marquee-track">
-      <span class="marquee-item">C#</span>
-      <span class="marquee-item">ASP.NET Core</span>
-      <span class="marquee-item">Blazor</span>
-      <span class="marquee-item">Microsoft Azure</span>
-      <span class="marquee-item">SQL Server</span>
-      <span class="marquee-item">Visual Studio</span>
-      <span class="marquee-item">Angular</span>
-      <span class="marquee-item">React</span>
-      <span class="marquee-item">DevOps</span>
-      <span class="marquee-item">GitHub Copilot</span>
-      <span class="marquee-item">.NET MAUI</span>
-      <span class="marquee-item">Umbraco</span>
-      <!-- duplicate for seamless loop -->
-      <span class="marquee-item">C#</span>
-      <span class="marquee-item">ASP.NET Core</span>
-      <span class="marquee-item">Blazor</span>
-      <span class="marquee-item">Microsoft Azure</span>
-      <span class="marquee-item">SQL Server</span>
-      <span class="marquee-item">Visual Studio</span>
-      <span class="marquee-item">Angular</span>
-      <span class="marquee-item">React</span>
-      <span class="marquee-item">DevOps</span>
-      <span class="marquee-item">GitHub Copilot</span>
-      <span class="marquee-item">.NET MAUI</span>
-      <span class="marquee-item">Umbraco</span>
+    <div class="marquee-track" id="marqueeTrack">
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#2f5670" stroke-width="1.6"/><path d="M9 8v8M15 8v8M7 10h6.5a2.5 2.5 0 1 1 0 5H7" fill="none" stroke="#2f5670" stroke-width="1.4"/></svg>
+        C#
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z" fill="#5c2d91"/><path d="M12 2 3 7l9 5 9-5-9-5z" fill="#8552c9"/></svg>
+        ASP.NET Core
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#8552c9" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" fill="#8552c9"/></svg>
+        Blazor
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" fill="#f25022"/><rect x="13" y="2" width="9" height="9" fill="#7fba00"/><rect x="2" y="13" width="9" height="9" fill="#00a4ef"/><rect x="13" y="13" width="9" height="9" fill="#ffb900"/></svg>
+        Microsoft Azure
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="2.6" fill="none" stroke="#2f5670" stroke-width="1.4"/><path d="M4 5v14c0 1.4 3.6 2.6 8 2.6s8-1.2 8-2.6V5" fill="none" stroke="#2f5670" stroke-width="1.4"/><path d="M4 11c0 1.4 3.6 2.6 8 2.6s8-1.2 8-2.6" fill="none" stroke="#2f5670" stroke-width="1.4"/></svg>
+        SQL Server
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><path d="M14.5 2 22 6.5v11L14.5 22 2 17.5v-11L14.5 2Z" fill="#b4009e"/><path d="M9 7.5l6 4.5-6 4.5V7.5Z" fill="#fff"/></svg>
+        Visual Studio
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><path d="M12 2 22 5.5 20.3 19 12 22 3.7 19 2 5.5 12 2Z" fill="#dd0031"/><path d="M12 2v20l8.3-3L22 5.5 12 2Z" fill="#c3002f"/><path d="M12 5.5 6.5 17h2l1.1-2.7h4.7l1.1 2.7h2L12 5.5Zm0 3.6 1.7 4.2h-3.4L12 9.1Z" fill="#fff"/></svg>
+        Angular
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3" fill="#61dafb"/><g fill="none" stroke="#61dafb" stroke-width="1.4"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g></svg>
+        React
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><path d="M7 12a5 5 0 1 1 5 5" fill="none" stroke="#0078d4" stroke-width="1.8" stroke-linecap="round"/><path d="M17 12a5 5 0 1 1-5-5" fill="none" stroke="#0078d4" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Azure DevOps
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><path d="M12 2 2 8.5v7L12 22l10-6.5v-7L12 2Z" fill="#161b22"/><path d="M12 6.2c-3 0-5.4 2.3-5.4 5.2 0 2.3 1.5 4.3 3.7 5 .27.05.37-.12.37-.26v-1c-1.5.32-1.8-.65-1.8-.65-.25-.6-.6-.77-.6-.77-.5-.33.04-.33.04-.33.53.04.82.53.82.53.49.8 1.28.57 1.6.43.05-.34.19-.57.35-.7-1.2-.14-2.46-.6-2.46-2.63 0-.58.21-1.05.55-1.42-.06-.14-.24-.7.05-1.45 0 0 .45-.14 1.48.55a5.3 5.3 0 0 1 2.7 0c1.03-.69 1.48-.55 1.48-.55.29.75.11 1.31.05 1.45.34.37.55.84.55 1.42 0 2.04-1.26 2.48-2.47 2.62.2.16.37.48.37.98v1.45c0 .14.1.31.38.26 2.2-.7 3.7-2.7 3.7-5 0-2.9-2.4-5.2-5.4-5.2Z" fill="#fff"/></svg>
+        GitHub Copilot
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="9.2" height="9.2" rx="1.6" fill="#2f5670"/><rect x="12.8" y="4" width="9.2" height="9.2" rx="1.6" fill="#4a7ea3"/><rect x="2" y="14.8" width="9.2" height="9.2" rx="1.6" fill="#4a7ea3"/><rect x="12.8" y="14.8" width="9.2" height="9.2" rx="1.6" fill="#2f5670"/></svg>
+        .NET MAUI
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#141414"/><text x="12" y="16.5" text-anchor="middle" font-family="Sora" font-weight="800" font-size="12" fill="#fff">U</text></svg>
+        Umbraco
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><rect x="2" y="3" width="9" height="9" rx="1.3" fill="#f25022"/><rect x="13" y="3" width="9" height="9" rx="1.3" fill="#7fba00"/><rect x="2" y="14" width="9" height="9" rx="1.3" fill="#00a4ef"/><rect x="13" y="14" width="9" height="9" rx="1.3" fill="#ffb900"/></svg>
+        Microsoft 365
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" fill="#f2c811"/><rect x="5.5" y="12" width="3" height="7" fill="#141414"/><rect x="10.5" y="8" width="3" height="11" fill="#141414"/><rect x="15.5" y="5" width="3" height="14" fill="#141414"/></svg>
+        Power BI
+      </span>
+      <span class="marquee-item">
+        <svg class="marquee-icon" viewBox="0 0 24 24"><circle cx="9.5" cy="12" r="7.2" fill="#464eb8"/><circle cx="17" cy="8.6" r="3.4" fill="#7b83eb"/><text x="9.5" y="16" text-anchor="middle" font-family="Sora" font-weight="800" font-size="10" fill="#fff">T</text></svg>
+        Microsoft Teams
+      </span>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
+<!-- ============ ABOUT (feature row) ============ -->
 <section class="section" id="about">
-  <div class="container about-grid">
-    <div class="reveal-up">
+  <div class="container feature-grid">
+    <div class="feature-media reveal-up">
+      <img src="assets/images/event-crowd.jpg" alt="A speaker addressing the audience at a .NET Hub Kathmandu event, Maitri office, Kathmandu" loading="lazy" />
+    </div>
+    <div class="reveal-up" style="--d:0.1s">
       <p class="section-tag">Who we are</p>
       <h2 class="section-title">A community built by engineers, for engineers.</h2>
       <p class="section-text">
-        .NET Hub Kathmandu is a vibrant tech community dedicated to Microsoft's .NET
-        technology stack. We exist to bring developers together — to share knowledge,
-        collaborate on real projects, and stay current as the .NET ecosystem evolves.
-      </p>
-      <p class="section-text">
-        Our mission is simple: <strong>foster collaboration, inspire innovation, and
-        contribute to the growth of Nepal's technology industry.</strong> Every session is
-        run by senior software engineers and Microsoft MVPs who volunteer their time to
-        mentor the local developer community.
+        .NET Hub Kathmandu brings developers together to learn, share, and ship —
+        through hands‑on workshops and talks run by senior software engineers and
+        Microsoft MVPs, for Nepal's growing .NET community.
       </p>
       <ul class="check-list">
         <li>Hands‑on workshops — from ASP.NET Core APIs to Umbraco CMS</li>
-        <li>Local Microsoft Build &amp; GitHub Copilot Dev Days watch‑parties</li>
         <li>Official .NET Foundation community group</li>
         <li>Free, open, and welcoming to developers of every level</li>
       </ul>
-    </div>
-
-    <div class="about-card-stack reveal-up" style="--d:0.15s">
-      <div class="glass-card tilt-card">
-        <div class="glass-card-icon">🎯</div>
-        <h3>Our Mission</h3>
-        <p>Grow a self‑sustaining .NET developer ecosystem in Nepal through mentorship, events and open knowledge sharing.</p>
-      </div>
-      <div class="glass-card tilt-card">
-        <div class="glass-card-icon">🤝</div>
-        <h3>Our Community</h3>
-        <p>900+ members strong — students, senior engineers, architects and founders, all learning together.</p>
-      </div>
-      <div class="glass-card tilt-card">
-        <div class="glass-card-icon">🚀</div>
-        <h3>Our Promise</h3>
-        <p>Practical, no‑fluff sessions taught by people who ship .NET in production every day.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -197,6 +191,15 @@
   </div>
 </section>
 
+<!-- ============ PHOTO BREAK ============ -->
+<section class="photo-break">
+  <img src="assets/images/event-build-stage.jpg" alt="Microsoft Build — Localhost Kathmandu, on stage" loading="lazy" />
+  <div class="container photo-break-copy">
+    <p class="section-tag">Microsoft Build — Localhost Kathmandu</p>
+    <h2>Real talks, real production takeaways.</h2>
+  </div>
+</section>
+
 <!-- ============ TECH STACK ============ -->
 <section class="section" id="stack">
   <div class="container">
@@ -206,34 +209,28 @@
       Our talks and workshops span the full stack — from the runtime up to the cloud.
     </p>
 
-    <div class="stack-grid">
-      <div class="stack-card reveal-up">
-        <svg class="stack-icon" viewBox="0 0 24 24"><path d="M2 12c0-3.5 1.5-6 4-7.5v15C3.5 18 2 15.5 2 12z" fill="#5b87ab"/><path d="M22 12c0 3.5-1.5 6-4 7.5v-15c2.5 1.5 4 4 4 7.5z" fill="#2f5670"/><circle cx="12" cy="12" r="5" fill="#e7f0f6"/></svg>
+    <div class="stack-list">
+      <div class="stack-item reveal-up">
         <h4>C# &amp; .NET</h4>
         <p>Modern C#, .NET 8/9, minimal APIs and performance‑first design.</p>
       </div>
-      <div class="stack-card reveal-up" style="--d:0.08s">
-        <svg class="stack-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" fill="#f25022"/><rect x="13" y="2" width="9" height="9" fill="#7fba00"/><rect x="2" y="13" width="9" height="9" fill="#00a4ef"/><rect x="13" y="13" width="9" height="9" fill="#ffb900"/></svg>
+      <div class="stack-item reveal-up" style="--d:0.05s">
         <h4>Microsoft Azure</h4>
         <p>Cloud‑native apps, App Service, Functions, and Azure DevOps pipelines.</p>
       </div>
-      <div class="stack-card reveal-up" style="--d:0.16s">
-        <svg class="stack-icon" viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z" fill="#5c2d91"/><path d="M12 2 3 7l9 5 9-5-9-5z" fill="#68217a"/></svg>
+      <div class="stack-item reveal-up" style="--d:0.1s">
         <h4>ASP.NET Core &amp; Blazor</h4>
         <p>Web APIs, MVC, Razor Pages and interactive Blazor front ends.</p>
       </div>
-      <div class="stack-card reveal-up" style="--d:0.24s">
-        <svg class="stack-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="1.5" fill="#616161"/><rect x="3" y="4" width="18" height="13" rx="1.5" fill="none" stroke="#5b87ab" stroke-width="1"/><rect x="9" y="19" width="6" height="1.6" fill="#9e9e9e"/></svg>
+      <div class="stack-item reveal-up" style="--d:0.15s">
         <h4>SQL Server &amp; EF Core</h4>
         <p>Data modelling, performance tuning and cloud database patterns.</p>
       </div>
-      <div class="stack-card reveal-up" style="--d:0.32s">
-        <svg class="stack-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3" fill="#61dafb"/><g fill="none" stroke="#61dafb" stroke-width="1.4"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g></svg>
+      <div class="stack-item reveal-up" style="--d:0.2s">
         <h4>Angular &amp; React</h4>
         <p>Front‑end pairings that plug into .NET APIs at production scale.</p>
       </div>
-      <div class="stack-card reveal-up" style="--d:0.4s">
-        <svg class="stack-icon" viewBox="0 0 24 24"><path d="M12 2c-5.5 0-10 4.5-10 10 0 4.4 2.9 8.1 6.8 9.4-.1-.7-.2-1.9 0-2.7.2-.8 1.3-5.4 1.3-5.4s-.3-.7-.3-1.6c0-1.6.9-2.7 2-2.7 1 0 1.4.7 1.4 1.6 0 1-.6 2.4-1 3.8-.3 1.1.6 2 1.7 2 2 0 3.6-2.2 3.6-5.3 0-2.8-2-4.8-4.9-4.8-3.3 0-5.3 2.5-5.3 5.1 0 1 .3 1.7.8 2.3.1.1.1.2 0 .3-.1.4-.3.9-.3 1-.1.2-.2.2-.4.1-1.3-.5-1.9-2-1.9-3.6 0-2.7 2.3-6 6.7-6 3.6 0 6 2.6 6 5.4 0 3.7-2.1 6.5-5.1 6.5-1 0-2-.5-2.3-1.2 0 0-.6 2.2-.7 2.6-.2.7-.6 1.4-1 1.9 1 .3 2 .5 3.1.5 5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="#616161"/></svg>
+      <div class="stack-item reveal-up" style="--d:0.25s">
         <h4>DevOps &amp; GitHub</h4>
         <p>CI/CD, GitHub Actions and Copilot‑assisted engineering workflows.</p>
       </div>
@@ -252,40 +249,36 @@
       give their time back to Nepal's developer community.
     </p>
 
-    <div class="credential-strip reveal-up">
-      <div class="credential-badge">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2l3 6 6 1-4.5 4.3L17.5 20 12 17l-5.5 3 1-6.7L3 9l6-1 3-6z" fill="#5b87ab"/></svg>
-        Microsoft MVP
-      </div>
-      <div class="credential-badge">
-        <svg viewBox="0 0 24 24" width="22" height="22"><rect x="2" y="2" width="9" height="9" fill="#f25022"/><rect x="13" y="2" width="9" height="9" fill="#7fba00"/><rect x="2" y="13" width="9" height="9" fill="#00a4ef"/><rect x="13" y="13" width="9" height="9" fill="#ffb900"/></svg>
-        Microsoft Certified
-      </div>
-      <div class="credential-badge">
-        <svg viewBox="0 0 24 24" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5" fill="#2f5670"/><text x="12" y="16" text-anchor="middle" font-family="Sora" font-weight="800" font-size="10" fill="#fff">.NET</text></svg>
-        .NET Foundation Group
-      </div>
-    </div>
-
     <div class="leaders-grid">
-      <article class="leader-card reveal-up">
-        <div class="leader-avatar" style="--hue:265">PT</div>
+      <a class="leader-card reveal-up" href="https://www.linkedin.com/in/ptamang/" target="_blank" rel="noopener">
+        <span class="leader-linkedin" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 .001-4.124 2.062 2.062 0 0 1-.001 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+        </span>
+        <div class="leader-avatar">PT</div>
         <h3>Pasang Tamang</h3>
-        <p class="leader-role">Founder &amp; Lead Organizer</p>
+        <p class="leader-role">Founder &amp; Lead Organizer, Microsoft MVP</p>
         <p class="leader-bio">Senior software engineer driving the .NET Hub Kathmandu community, workshops and Foundation partnership.</p>
-      </article>
-      <article class="leader-card reveal-up" style="--d:0.1s">
-        <div class="leader-avatar" style="--hue:210">MVP</div>
-        <h3>Microsoft MVP Panel</h3>
-        <p class="leader-role">Technical Speakers</p>
-        <p class="leader-bio">Award‑winning MVPs across Azure, Developer Technologies and Data Platform lead our flagship sessions.</p>
-      </article>
-      <article class="leader-card reveal-up" style="--d:0.2s">
-        <div class="leader-avatar" style="--hue:190">SL</div>
-        <h3>Senior Leadership Team</h3>
-        <p class="leader-role">Architects &amp; Engineering Leads</p>
-        <p class="leader-bio">Principal and staff engineers from Nepal's tech industry mentor speakers and curate the roadmap.</p>
-      </article>
+      </a>
+      <a class="leader-card reveal-up" style="--d:0.1s" href="https://www.linkedin.com/in/nabaraj-ghimire/" target="_blank" rel="noopener">
+        <span class="leader-linkedin" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 .001-4.124 2.062 2.062 0 0 1-.001 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+        </span>
+        <div class="leader-avatar">NG</div>
+        <h3>Nabaraj Ghimire</h3>
+        <p class="leader-role">Principal Software Engineer, SELISE Group</p>
+        <p class="leader-bio">Senior technical leader speaking and mentoring at .NET Hub Kathmandu workshops and dev days.</p>
+      </a>
+      <a class="leader-card leader-card-cta reveal-up" style="--d:0.2s" href="https://www.linkedin.com/company/93383345" target="_blank" rel="noopener">
+        <span class="leader-linkedin" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 .001-4.124 2.062 2.062 0 0 1-.001 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+        </span>
+        <div class="leader-avatar leader-avatar-plus" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        </div>
+        <h3>This could be you</h3>
+        <p class="leader-role">Join our leadership team</p>
+        <p class="leader-bio">Speak, organise, or mentor at .NET Hub Kathmandu — follow us on LinkedIn and reach out.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -320,11 +313,11 @@
     </div>
 
     <a href="https://www.meetup.com/dot-net-hub-kathmandu/events/" target="_blank" rel="noopener" class="live-events-panel reveal-up">
-      <span class="live-events-icon">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4.5" width="18" height="16" rx="2.4"/>
-          <path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>
-          <path d="M8.2 14.2l2.4 2.4 5-5.2"/>
+      <span class="live-events-icon live-events-icon-meetup">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <circle cx="9" cy="15" r="6.4" fill="#ED1C40"/>
+          <circle cx="15.5" cy="8" r="5.2" fill="#ED1C40" opacity=".82"/>
+          <circle cx="17.5" cy="16.5" r="3.1" fill="#ED1C40" opacity=".65"/>
         </svg>
       </span>
       <span class="live-events-text">
@@ -436,45 +429,69 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" width="30" height="30">
-          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#gradMark2)"/>
-          <text x="24" y="30" text-anchor="middle" font-family="Sora, sans-serif" font-weight="800" font-size="17" fill="#fff">.NET</text>
-          <defs>
-            <linearGradient id="gradMark2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#5b87ab"/>
-              <stop offset="1" stop-color="#2f5670"/>
-            </linearGradient>
-          </defs>
-        </svg>
+        <img src="assets/icons/logo-mark.png" alt="" width="32" height="32" />
       </span>
       <div>
         <strong>.NET Hub Kathmandu</strong>
         <p>A .NET Foundation community group based in Kathmandu, Nepal.</p>
       </div>
+
+      <div class="footer-visual footer-visual-left" aria-hidden="true">
+        <div class="footer-icon reveal-h" style="--tx:-40px; --r:-8deg; --d:0.05s; top:0; left:0;">
+          <div class="footer-icon-inner icon-blue" style="--bd:0s;">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 3 12l5 5M16 7l5 5-5 5"/></svg>
+          </div>
+        </div>
+        <div class="footer-icon reveal-h" style="--tx:-40px; --r:7deg; --d:0.2s; top:54px; left:44px;">
+          <div class="footer-icon-inner icon-dark" style="--bd:.4s;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l5 5-5 5M13 17h6"/></svg>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="footer-cols">
-      <div>
-        <h5>Explore</h5>
-        <a href="#about">About</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#events">Events</a>
+    <div class="footer-right">
+      <div class="footer-cols">
+        <div>
+          <h5>Explore</h5>
+          <a href="#about">About</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#events">Events</a>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <a href="https://www.meetup.com/dot-net-hub-kathmandu" target="_blank" rel="noopener">Meetup</a>
+          <a href="https://www.linkedin.com/company/93383345" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.youtube.com/@dotNETHubKathmanduOrg" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://github.com/NET-Hub-Kathmandu" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.facebook.com/dotNETHubKathmandu/" target="_blank" rel="noopener">Facebook</a>
+          <a href="mailto:info@dotnethubkathmandu.org">info@dotnethubkathmandu.org</a>
+        </div>
       </div>
-      <div>
-        <h5>Connect</h5>
-        <a href="https://www.meetup.com/dot-net-hub-kathmandu" target="_blank" rel="noopener">Meetup</a>
-        <a href="https://www.linkedin.com/company/93383345" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.youtube.com/@dotNETHubKathmanduOrg" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://github.com/NET-Hub-Kathmandu" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.facebook.com/dotNETHubKathmandu/" target="_blank" rel="noopener">Facebook</a>
-        <a href="mailto:info@dotnethubkathmandu.org">info@dotnethubkathmandu.org</a>
+
+      <div class="footer-visual footer-visual-right" aria-hidden="true">
+        <div class="footer-icon reveal-h" style="--tx:40px; --r:-6deg; --d:0.05s; top:0; left:36px;">
+          <div class="footer-icon-inner icon-white" style="--bd:0s;">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#2f5670" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 13.9 9 20 11l-6.1 2L12 20l-1.9-7L4 11l6.1-2L12 2.5Z"/></svg>
+          </div>
+        </div>
+        <div class="footer-icon reveal-h" style="--tx:40px; --r:8deg; --d:0.2s; top:66px; left:86px;">
+          <div class="footer-icon-inner icon-blue" style="--bd:.35s;">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.6-7.95A5 5 0 0 1 16 8.2a3.8 3.8 0 0 1-.7 7.8H7Z"/><path d="M12 11v6M9.5 14.5 12 12l2.5 2.5"/></svg>
+          </div>
+        </div>
+        <div class="footer-icon reveal-h" style="--tx:40px; --r:-9deg; --d:0.35s; top:96px; left:6px;">
+          <div class="footer-icon-inner icon-white" style="--bd:.7s;">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#2f5670" stroke-width="1.7" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 8v8M8 6h4a4 4 0 0 1 4 4v0"/></svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© <span id="year"></span> .NET Hub Kathmandu. Built with ♥ by the community, for the community.</p>
+      <p>© <span id="year"></span> .NET Hub Kathmandu. <a href="https://github.com/NET-Hub-Kathmandu/event-registry/blob/main/EVENT_CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Event Code of Conduct</a></p>
     </div>
   </div>
 </footer>
