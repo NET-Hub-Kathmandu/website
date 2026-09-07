@@ -1,0 +1,24 @@
+{
+  "name": "nethub-backend",
+  "version": "1.0.0",
+  "description": "Backend API for .NET Hub Kathmandu website",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "api"
+  ],
+  "author": ".NET Hub Kathmandu",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "mysql2": "^3.12.0"
+  }
+}
